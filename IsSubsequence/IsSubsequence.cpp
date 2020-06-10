@@ -1,0 +1,89 @@
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+/*
+https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/540/week-2-june-8th-june-14th/3355/
+https://leetcode.com/problems/is-subsequence/
+
+Given a string s and a string t, check if s is subsequence of t.
+
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, "ace" is a subsequence of "abcde" while "aec" is not).
+
+Follow up:
+If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, and you want to check one by one to see if T has its subsequence. In this scenario, how would you change your code?
+
+Credits:
+Special thanks to @pbrother for adding this problem and creating all test cases.
+
+
+
+Example 1:
+
+Input: s = "abc", t = "ahbgdc"
+Output: true
+Example 2:
+
+Input: s = "axc", t = "ahbgdc"
+Output: false
+
+
+Constraints:
+
+0 <= s.length <= 100
+0 <= t.length <= 10^4
+Both strings consists only of lowercase characters.
+
+*/
+
+//Runtime: 0 ms
+//Memory Usage : 6.3 MB
+//class Solution {
+//public:
+//
+//	bool isSubsequence(string s, string t) {
+//		if (s.empty())
+//			return true;
+//		size_t i = 0, j = 0;
+//		while (i < t.length() && j < s.length())
+//		{
+//			const size_t p = t.find(s[j], i);
+//			if (p == string::npos)
+//				return false;
+//			++j;
+//			i = p + 1;
+//		}
+//		return j == s.length();
+//	}
+//};
+
+//Runtime: 4 ms, faster than 85.40% of C++ online submissions for Is Subsequence.
+//Memory Usage : 6.3 MB, less than 99.61% of C++ online submissions for Is Subsequence.
+class Solution {
+public:
+
+	bool isSubsequence(string s, string t) {
+		if (s.empty())
+			return true;
+		size_t i = 0, j = 0;
+		while (i < s.length() && j < t.length())
+		{
+			if (s[i] == t[j])
+				++i;
+			++j;
+		}
+		return i == s.length();
+	}
+};
+
+int main()
+{
+	cout << boolalpha << Solution().isSubsequence("abc", "ahbgdc") << endl; // true
+	cout << boolalpha << Solution().isSubsequence("axc", "ahbgdc") << endl; // false
+
+    return 0;
+}
+
