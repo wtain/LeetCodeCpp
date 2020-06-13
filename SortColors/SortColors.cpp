@@ -26,6 +26,8 @@ First, iterate the array counting number of 0's, 1's, and 2's, then overwrite ar
 Could you come up with a one-pass algorithm using only constant space?
 */
 
+//Runtime: 4 ms, faster than 49.05% of C++ online submissions for Sort Colors.
+//Memory Usage : 8.6 MB, less than 5.80% of C++ online submissions for Sort Colors.
 class Solution {
 public:
 	void sortColors(vector<int>& nums) 
