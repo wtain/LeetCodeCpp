@@ -1,3 +1,6 @@
 Debug
 *.exe
 *.user
+/.vs/LeetCodeCpp/v14/*.suo
+/*.opensdf
+/*.sdf
