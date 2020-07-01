@@ -7,7 +7,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="FirstBadVersion.cpp">
+    <ClCompile Include="PalindromicSubstrings.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
