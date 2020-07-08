@@ -49,6 +49,8 @@ using namespace std;
 //	return result;
 //}
 
+//Runtime: 172 ms, faster than 36.96% of C++ online submissions for 3Sum.
+//Memory Usage : 19.7 MB, less than 76.37% of C++ online submissions for 3Sum.
 class Solution {
 public:
 	vector<vector<int>> threeSum(vector<int>& nums)
