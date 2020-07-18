@@ -41,6 +41,115 @@ You may assume that there are no duplicate edges in the input prerequisites.
 
 */
 
+//class Solution {
+//public:
+//
+//	class Course
+//	{
+//		unordered_set<int> dependencies;
+//		unordered_set<int> dependants;
+//
+//	public:
+//		Course()
+//		{
+//
+//		}
+//
+//		void addDependency(int j)
+//		{
+//			dependencies.insert(j);
+//		}
+//
+//		void addDependant(int i)
+//		{
+//			dependants.insert(i);
+//		}
+//
+//		void removeDependency(int j)
+//		{
+//			dependencies.erase(j);
+//		}
+//
+//		void removeDependant(int i)
+//		{
+//			dependants.erase(i);
+//		}
+//
+//		bool hasDependencies() const
+//		{
+//			return !dependencies.empty();
+//		}
+//
+//		const vector<int> dependantCourses() const
+//		{
+//			return{ begin(dependants), end(dependants) };
+//		}
+//	};
+//
+//	class DependenciesTracker
+//	{
+//		vector<Course> courses;
+//		unordered_set<int> toTake;
+//
+//	public:
+//		DependenciesTracker(int numCourses, vector<pair<int, int>>& prerequisites)
+//		{
+//			courses.resize(numCourses);
+//			for (const auto& d : prerequisites)
+//				AddDepencency(d.first, d.second);
+//			for (int i = 0; i < courses.size(); ++i)
+//				if (!courses[i].hasDependencies())
+//					toTake.insert(i);
+//		}
+//
+//		void AddDepencency(int i, int j)
+//		{
+//			courses[i].addDependency(j);
+//			courses[j].addDependant(i);
+//		}
+//
+//		void RemoveDepencency(int i, int j)
+//		{
+//			courses[i].removeDependency(j);
+//			courses[j].removeDependant(i);
+//			if (!courses[i].hasDependencies())
+//				toTake.insert(i);
+//		}
+//
+//		int Take()
+//		{
+//			int i = *toTake.begin();
+//			toTake.erase(i);
+//			const auto dc = courses[i].dependantCourses();
+//			for (auto j : dc)
+//				RemoveDepencency(j, i);
+//			return i;
+//		}
+//
+//		bool CanTake() const
+//		{
+//			return !toTake.empty();
+//		}
+//	};
+//
+//	vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) 
+//	{
+//		vector<int> result;
+//		
+//		DependenciesTracker tracker(numCourses, prerequisites);
+//		while (tracker.CanTake())
+//			result.push_back(tracker.Take());
+//
+//		if (result.size() < numCourses)
+//			return{};
+//
+//		return result;
+//	}
+//};
+
+
+//Runtime: 120 ms, faster than 8.81% of C++ online submissions for Course Schedule II.
+//Memory Usage: 16.7 MB, less than 9.70% of C++ online submissions for Course Schedule II.
 class Solution {
 public:
 
@@ -92,11 +201,11 @@ public:
 		unordered_set<int> toTake;
 
 	public:
-		DependenciesTracker(int numCourses, vector<pair<int, int>>& prerequisites)
+		DependenciesTracker(int numCourses, vector<vector<int>>& prerequisites)
 		{
 			courses.resize(numCourses);
 			for (const auto& d : prerequisites)
-				AddDepencency(d.first, d.second);
+				AddDepencency(d[0], d[1]);
 			for (int i = 0; i < courses.size(); ++i)
 				if (!courses[i].hasDependencies())
 					toTake.insert(i);
@@ -132,10 +241,10 @@ public:
 		}
 	};
 
-	vector<int> findOrder(int numCourses, vector<pair<int, int>>& prerequisites) 
+	vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites)
 	{
 		vector<int> result;
-		
+
 		DependenciesTracker tracker(numCourses, prerequisites);
 		while (tracker.CanTake())
 			result.push_back(tracker.Take());
@@ -149,8 +258,10 @@ public:
 
 int main()
 {
-	vector<pair<int, int>> p1 = { {1,0} };
-	vector<pair<int, int>> p2 = { {1,0},{2,0},{3,1},{3,2} };
+	/*vector<pair<int, int>> p1 = { {1,0} };
+	vector<pair<int, int>> p2 = { {1,0},{2,0},{3,1},{3,2} };*/
+	vector<vector<int>> p1 = { { 1,0 } };
+	vector<vector<int>> p2 = { { 1,0 },{ 2,0 },{ 3,1 },{ 3,2 } };
 
 	auto r1 = Solution().findOrder(2, p1);
 	copy(begin(r1), end(r1), ostream_iterator<int>(cout, " "));
