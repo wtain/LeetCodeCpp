@@ -871,6 +871,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BitwiseORsOfSubarrays", "Bi
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindTheDifference", "FindTheDifference\FindTheDifference.vcxproj", "{45D95502-9747-4286-A59D-F111E08C5A82}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CountNumbersWithUniqueDigits", "CountNumbersWithUniqueDigits\CountNumbersWithUniqueDigits.vcxproj", "{062D8E18-AF59-42B7-8F0D-5A0989786998}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -3939,6 +3941,14 @@ Global
 		{45D95502-9747-4286-A59D-F111E08C5A82}.Release|x64.Build.0 = Release|x64
 		{45D95502-9747-4286-A59D-F111E08C5A82}.Release|x86.ActiveCfg = Release|Win32
 		{45D95502-9747-4286-A59D-F111E08C5A82}.Release|x86.Build.0 = Release|Win32
+		{062D8E18-AF59-42B7-8F0D-5A0989786998}.Debug|x64.ActiveCfg = Debug|x64
+		{062D8E18-AF59-42B7-8F0D-5A0989786998}.Debug|x64.Build.0 = Debug|x64
+		{062D8E18-AF59-42B7-8F0D-5A0989786998}.Debug|x86.ActiveCfg = Debug|Win32
+		{062D8E18-AF59-42B7-8F0D-5A0989786998}.Debug|x86.Build.0 = Debug|Win32
+		{062D8E18-AF59-42B7-8F0D-5A0989786998}.Release|x64.ActiveCfg = Release|x64
+		{062D8E18-AF59-42B7-8F0D-5A0989786998}.Release|x64.Build.0 = Release|x64
+		{062D8E18-AF59-42B7-8F0D-5A0989786998}.Release|x86.ActiveCfg = Release|Win32
+		{062D8E18-AF59-42B7-8F0D-5A0989786998}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4360,5 +4370,6 @@ Global
 		{DAAA9D60-B08D-4DAB-B207-F88595D27A1D} = {F6CB8BF1-D7E8-4DF7-88E0-1C9A727174DC}
 		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
 		{45D95502-9747-4286-A59D-F111E08C5A82} = {8F58010B-4A03-4828-A7B4-1B2C99E98CA9}
+		{062D8E18-AF59-42B7-8F0D-5A0989786998} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
 	EndGlobalSection
 EndGlobal
