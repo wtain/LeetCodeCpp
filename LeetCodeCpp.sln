@@ -867,6 +867,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReverseWordsInAString", "Re
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BinaryTreeZigzagLevelOrderTraversal", "BinaryTreeZigzagLevelOrderTraversal\BinaryTreeZigzagLevelOrderTraversal.vcxproj", "{DAAA9D60-B08D-4DAB-B207-F88595D27A1D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BitwiseORsOfSubarrays", "BitwiseORsOfSubarrays\BitwiseORsOfSubarrays.vcxproj", "{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -3919,6 +3921,14 @@ Global
 		{DAAA9D60-B08D-4DAB-B207-F88595D27A1D}.Release|x64.Build.0 = Release|x64
 		{DAAA9D60-B08D-4DAB-B207-F88595D27A1D}.Release|x86.ActiveCfg = Release|Win32
 		{DAAA9D60-B08D-4DAB-B207-F88595D27A1D}.Release|x86.Build.0 = Release|Win32
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}.Debug|x64.ActiveCfg = Debug|x64
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}.Debug|x64.Build.0 = Debug|x64
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}.Debug|x86.ActiveCfg = Debug|Win32
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}.Debug|x86.Build.0 = Debug|Win32
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}.Release|x64.ActiveCfg = Release|x64
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}.Release|x64.Build.0 = Release|x64
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}.Release|x86.ActiveCfg = Release|Win32
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4338,5 +4348,6 @@ Global
 		{B1F43F96-359C-45FE-8CF5-C225C2589060} = {47D5F126-E985-4CF1-8320-987E47B911C9}
 		{0F89EF96-DF93-4FEE-AD1D-91381781C9FA} = {ADE0BE59-6E51-4BB1-8F4D-0D4828CDDF35}
 		{DAAA9D60-B08D-4DAB-B207-F88595D27A1D} = {F6CB8BF1-D7E8-4DF7-88E0-1C9A727174DC}
+		{E7F7AD0B-DEAD-467C-AE1D-481E92A57A60} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
 	EndGlobalSection
 EndGlobal
