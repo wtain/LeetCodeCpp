@@ -933,6 +933,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortTheMatrixDiagonally", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FilterRestaurantsByVeganFriendlyPriceAndDistance", "FilterRestaurantsByVeganFriendlyPriceAndDistance\FilterRestaurantsByVeganFriendlyPriceAndDistance.vcxproj", "{A94C11B1-CD98-431F-83DB-1D7056761921}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ValidPalindrome", "ValidPalindrome\ValidPalindrome.vcxproj", "{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -4249,6 +4251,14 @@ Global
 		{A94C11B1-CD98-431F-83DB-1D7056761921}.Release|x64.Build.0 = Release|x64
 		{A94C11B1-CD98-431F-83DB-1D7056761921}.Release|x86.ActiveCfg = Release|Win32
 		{A94C11B1-CD98-431F-83DB-1D7056761921}.Release|x86.Build.0 = Release|Win32
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}.Debug|x64.ActiveCfg = Debug|x64
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}.Debug|x64.Build.0 = Debug|x64
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}.Debug|x86.ActiveCfg = Debug|Win32
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}.Debug|x86.Build.0 = Debug|Win32
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}.Release|x64.ActiveCfg = Release|x64
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}.Release|x64.Build.0 = Release|x64
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}.Release|x86.ActiveCfg = Release|Win32
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4701,5 +4711,6 @@ Global
 		{491E3C65-89C0-4F38-AF86-BF1B8B28F1E1} = {F6CB8BF1-D7E8-4DF7-88E0-1C9A727174DC}
 		{AAF8CCEE-3FB5-407A-A89C-93E4F9D24420} = {B2496A05-237D-4956-BC9D-1F0D807F8EE2}
 		{A94C11B1-CD98-431F-83DB-1D7056761921} = {B2496A05-237D-4956-BC9D-1F0D807F8EE2}
+		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232} = {ADE0BE59-6E51-4BB1-8F4D-0D4828CDDF35}
 	EndGlobalSection
 EndGlobal
