@@ -939,6 +939,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AddAndSearchWordDataStructu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RottingOranges", "RottingOranges\RottingOranges.vcxproj", "{7C3F9A4D-4E6D-4681-B8B7-F3EB167DADEA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IteratorForCombination", "IteratorForCombination\IteratorForCombination.vcxproj", "{A3430BEA-1B77-43ED-9228-64390B5EA841}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -4279,6 +4281,14 @@ Global
 		{7C3F9A4D-4E6D-4681-B8B7-F3EB167DADEA}.Release|x64.Build.0 = Release|x64
 		{7C3F9A4D-4E6D-4681-B8B7-F3EB167DADEA}.Release|x86.ActiveCfg = Release|Win32
 		{7C3F9A4D-4E6D-4681-B8B7-F3EB167DADEA}.Release|x86.Build.0 = Release|Win32
+		{A3430BEA-1B77-43ED-9228-64390B5EA841}.Debug|x64.ActiveCfg = Debug|x64
+		{A3430BEA-1B77-43ED-9228-64390B5EA841}.Debug|x64.Build.0 = Debug|x64
+		{A3430BEA-1B77-43ED-9228-64390B5EA841}.Debug|x86.ActiveCfg = Debug|Win32
+		{A3430BEA-1B77-43ED-9228-64390B5EA841}.Debug|x86.Build.0 = Debug|Win32
+		{A3430BEA-1B77-43ED-9228-64390B5EA841}.Release|x64.ActiveCfg = Release|x64
+		{A3430BEA-1B77-43ED-9228-64390B5EA841}.Release|x64.Build.0 = Release|x64
+		{A3430BEA-1B77-43ED-9228-64390B5EA841}.Release|x86.ActiveCfg = Release|Win32
+		{A3430BEA-1B77-43ED-9228-64390B5EA841}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4734,5 +4744,6 @@ Global
 		{F7EC3FD5-338B-43F8-B7A0-C773CA8D1232} = {ADE0BE59-6E51-4BB1-8F4D-0D4828CDDF35}
 		{0F4EDE94-88D1-4A1D-9F77-7BB79046298C} = {31B85594-E692-4383-9A9D-BAFFF14E0F65}
 		{7C3F9A4D-4E6D-4681-B8B7-F3EB167DADEA} = {371F69F0-518E-42EB-8D68-D7D72585F6B8}
+		{A3430BEA-1B77-43ED-9228-64390B5EA841} = {13315B3A-8365-4B5C-A0F9-89CBD977AB3E}
 	EndGlobalSection
 EndGlobal
