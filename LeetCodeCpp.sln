@@ -943,6 +943,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IteratorForCombination", "I
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NonOverlappingIntervals", "NonOverlappingIntervals\NonOverlappingIntervals.vcxproj", "{001F73DB-912C-4A4D-9BF5-9E8147E0D1F2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BestTimeToBuyAndSellStock3", "BestTimeToBuyAndSellStock3\BestTimeToBuyAndSellStock3.vcxproj", "{1C7BE447-39BC-44FD-8FF4-87704D93C565}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -4299,6 +4301,14 @@ Global
 		{001F73DB-912C-4A4D-9BF5-9E8147E0D1F2}.Release|x64.Build.0 = Release|x64
 		{001F73DB-912C-4A4D-9BF5-9E8147E0D1F2}.Release|x86.ActiveCfg = Release|Win32
 		{001F73DB-912C-4A4D-9BF5-9E8147E0D1F2}.Release|x86.Build.0 = Release|Win32
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565}.Debug|x64.ActiveCfg = Debug|x64
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565}.Debug|x64.Build.0 = Debug|x64
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565}.Debug|x86.Build.0 = Debug|Win32
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565}.Release|x64.ActiveCfg = Release|x64
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565}.Release|x64.Build.0 = Release|x64
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565}.Release|x86.ActiveCfg = Release|Win32
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4756,5 +4766,6 @@ Global
 		{7C3F9A4D-4E6D-4681-B8B7-F3EB167DADEA} = {371F69F0-518E-42EB-8D68-D7D72585F6B8}
 		{A3430BEA-1B77-43ED-9228-64390B5EA841} = {13315B3A-8365-4B5C-A0F9-89CBD977AB3E}
 		{001F73DB-912C-4A4D-9BF5-9E8147E0D1F2} = {A62A367D-682F-41A4-9143-26E3BBD442E0}
+		{1C7BE447-39BC-44FD-8FF4-87704D93C565} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
 	EndGlobalSection
 EndGlobal
