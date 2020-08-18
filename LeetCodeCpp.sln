@@ -947,6 +947,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BestTimeToBuyAndSellStock3"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DistributeCandiesToPeople", "DistributeCandiesToPeople\DistributeCandiesToPeople.vcxproj", "{3D63728F-D5F3-47F9-A60E-61DD1415D388}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumbersWithSameConsecutiveDifferences", "NumbersWithSameConsecutiveDifferences\NumbersWithSameConsecutiveDifferences.vcxproj", "{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -4319,6 +4321,14 @@ Global
 		{3D63728F-D5F3-47F9-A60E-61DD1415D388}.Release|x64.Build.0 = Release|x64
 		{3D63728F-D5F3-47F9-A60E-61DD1415D388}.Release|x86.ActiveCfg = Release|Win32
 		{3D63728F-D5F3-47F9-A60E-61DD1415D388}.Release|x86.Build.0 = Release|Win32
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}.Debug|x64.ActiveCfg = Debug|x64
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}.Debug|x64.Build.0 = Debug|x64
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}.Debug|x86.ActiveCfg = Debug|Win32
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}.Debug|x86.Build.0 = Debug|Win32
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}.Release|x64.ActiveCfg = Release|x64
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}.Release|x64.Build.0 = Release|x64
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}.Release|x86.ActiveCfg = Release|Win32
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4778,5 +4788,6 @@ Global
 		{001F73DB-912C-4A4D-9BF5-9E8147E0D1F2} = {A62A367D-682F-41A4-9143-26E3BBD442E0}
 		{1C7BE447-39BC-44FD-8FF4-87704D93C565} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
 		{3D63728F-D5F3-47F9-A60E-61DD1415D388} = {12F1CEA4-16A7-40B9-BEC6-A42F671BE1CA}
+		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
 	EndGlobalSection
 EndGlobal
