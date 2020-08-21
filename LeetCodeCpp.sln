@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExpressionParser2", "ExpressionParser2\ExpressionParser2.vcxproj", "{87185BA7-FD4B-42A4-AEB9-7C942B6DFF77}"
 EndProject
@@ -950,6 +950,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumbersWithSameConsecutiveDifferences", "NumbersWithSameConsecutiveDifferences\NumbersWithSameConsecutiveDifferences.vcxproj", "{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GoatLatin", "GoatLatin\GoatLatin.vcxproj", "{306D4844-A43F-49B0-993A-9F9D3A178D06}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SortArrayByParity", "SortArrayByParity\SortArrayByParity.vcxproj", "{91827C88-2632-4C33-91A9-3498BDD4882C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -4339,6 +4341,14 @@ Global
 		{306D4844-A43F-49B0-993A-9F9D3A178D06}.Release|x64.Build.0 = Release|x64
 		{306D4844-A43F-49B0-993A-9F9D3A178D06}.Release|x86.ActiveCfg = Release|Win32
 		{306D4844-A43F-49B0-993A-9F9D3A178D06}.Release|x86.Build.0 = Release|Win32
+		{91827C88-2632-4C33-91A9-3498BDD4882C}.Debug|x64.ActiveCfg = Debug|x64
+		{91827C88-2632-4C33-91A9-3498BDD4882C}.Debug|x64.Build.0 = Debug|x64
+		{91827C88-2632-4C33-91A9-3498BDD4882C}.Debug|x86.ActiveCfg = Debug|Win32
+		{91827C88-2632-4C33-91A9-3498BDD4882C}.Debug|x86.Build.0 = Debug|Win32
+		{91827C88-2632-4C33-91A9-3498BDD4882C}.Release|x64.ActiveCfg = Release|x64
+		{91827C88-2632-4C33-91A9-3498BDD4882C}.Release|x64.Build.0 = Release|x64
+		{91827C88-2632-4C33-91A9-3498BDD4882C}.Release|x86.ActiveCfg = Release|Win32
+		{91827C88-2632-4C33-91A9-3498BDD4882C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4800,5 +4810,6 @@ Global
 		{3D63728F-D5F3-47F9-A60E-61DD1415D388} = {12F1CEA4-16A7-40B9-BEC6-A42F671BE1CA}
 		{6C7724E7-61BA-49A7-B1FB-6E8C4B8B1F0F} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
 		{306D4844-A43F-49B0-993A-9F9D3A178D06} = {ADE0BE59-6E51-4BB1-8F4D-0D4828CDDF35}
+		{91827C88-2632-4C33-91A9-3498BDD4882C} = {B3390619-D8DD-43D8-8C37-BD9EC626C498}
 	EndGlobalSection
 EndGlobal
