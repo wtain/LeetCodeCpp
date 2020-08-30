@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExpressionParser2", "ExpressionParser2\ExpressionParser2.vcxproj", "{87185BA7-FD4B-42A4-AEB9-7C942B6DFF77}"
 EndProject
@@ -960,6 +960,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SumOfLeftLeaves", "SumOfLeftLeaves\SumOfLeftLeaves.vcxproj", "{5A477754-3170-42A6-886A-6FE073E1F7EB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FindRightInterval", "FindRightInterval\FindRightInterval.vcxproj", "{DC11B54B-69D6-46B5-8A17-078B74238B6A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LargestComponentSizeByCommonFactor", "LargestComponentSizeByCommonFactor\LargestComponentSizeByCommonFactor.vcxproj", "{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -4389,6 +4391,14 @@ Global
 		{DC11B54B-69D6-46B5-8A17-078B74238B6A}.Release|x64.Build.0 = Release|x64
 		{DC11B54B-69D6-46B5-8A17-078B74238B6A}.Release|x86.ActiveCfg = Release|Win32
 		{DC11B54B-69D6-46B5-8A17-078B74238B6A}.Release|x86.Build.0 = Release|Win32
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}.Debug|x64.ActiveCfg = Debug|x64
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}.Debug|x64.Build.0 = Debug|x64
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}.Debug|x86.ActiveCfg = Debug|Win32
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}.Debug|x86.Build.0 = Debug|Win32
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}.Release|x64.ActiveCfg = Release|x64
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}.Release|x64.Build.0 = Release|x64
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}.Release|x86.ActiveCfg = Release|Win32
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4856,5 +4866,6 @@ Global
 		{D13DFBAA-A713-43A9-8500-7809AB4236D7} = {31B85594-E692-4383-9A9D-BAFFF14E0F65}
 		{5A477754-3170-42A6-886A-6FE073E1F7EB} = {D51CEA37-7D0C-48AD-9A69-ECB4CF3FA047}
 		{DC11B54B-69D6-46B5-8A17-078B74238B6A} = {D70943A9-B464-4D5F-B3A8-BAA08D5AEDBF}
+		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0} = {12F1CEA4-16A7-40B9-BEC6-A42F671BE1CA}
 	EndGlobalSection
 EndGlobal
