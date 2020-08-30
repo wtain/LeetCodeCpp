@@ -235,61 +235,113 @@ d * n = 20000 * 500 = 10 000 000
 //	}
 //};
 
-// https://leetcode.com/problems/largest-component-size-by-common-factor/discuss/820610/JAVA-Union-and-Find-Technique-Maintain-ParentMap
-// Runtime: 1096 ms, faster than 9.75% of C++ online submissions for Largest Component Size by Common Factor.
-// Memory Usage : 44.7 MB, less than 45.85% of C++ online submissions for Largest Component Size by Common Factor.
+// Runtime: 992 ms, faster than 11.92% of C++ online submissions for Largest Component Size by Common Factor.
+// Memory Usage : 44.6 MB, less than 46.93% of C++ online submissions for Largest Component Size by Common Factor.
 class Solution {
 public:
 
-	int getRoot(unordered_map<int, int>& parents, int label) {
-		auto it = parents.find(label);
-		if (it == end(parents))
-			parents.emplace_hint(it, label, label);
+	int getRoot(unordered_map<int, int>& roots, int label) {
 
-		while (label != parents[label])
-			label = parents[label];
+		auto it = roots.find(label);
+		if (it == end(roots))
+			roots[label] = label;
 
+		while (roots[label] != label)
+			label = roots[label];
 		return label;
 	}
 
-	void doUnion(int num, int factor, unordered_map<int, int>& parents) {
-		int numParent = getRoot(parents, num);
-		int factorParent = getRoot(parents, factor);
-
-		if (numParent < factorParent) {
-			parents[factorParent] = numParent;
-		}
-		else {
-			parents[numParent] = factorParent;
-		}
+	void doUnion(unordered_map<int, int>& roots, int n, int f) {
+		int r1 = getRoot(roots, n);
+		int r2 = getRoot(roots, f);
+		if (r1 < r2)
+			roots[r2] = r1;
+		else
+			roots[r1] = r2;
 	}
 
 	int largestComponentSize(vector<int>& A) {
 		const int n = A.size();
-		unordered_map<int, int> parents;
+		
+		unordered_map<int, int> roots;
 
-		for (int num: A) {
-			for (int factor = 2; factor*factor <= num; ++factor) {
-				if (num % factor == 0) {
-					doUnion(num, factor, parents);
-					if (num / factor != factor) {
-						doUnion(num, num / factor, parents);
-					}
+		for (int i = 0; i < n; ++i) {
+			for (int j = 2; j*j <= A[i]; ++j) {
+				if (A[i] % j == 0) {
+					doUnion(roots, A[i], j);
+					int res = A[i] / j;
+					if (res != j)
+						doUnion(roots, A[i], res);
 				}
 			}
 		}
+		unordered_map<int, int> sizes;
+		int maxSize = 0;
+		for (int i = 0; i < n; ++i) {
+			int root = getRoot(roots, A[i]);
 
-		unordered_map<int, int> cc;
-		int maxComp = 0;
-		for (auto num : A) {
-			int pk = getRoot(parents, num);
-			auto it = cc.find(pk);
-			cc[pk] = (it == end(cc) ? 0 : it->second) + 1;
-			maxComp = max(maxComp, cc[pk]);
+			sizes[root]++;
+			maxSize = max(maxSize, sizes[root]);
 		}
-		return maxComp;
+		return maxSize;
 	}
 };
+
+// https://leetcode.com/problems/largest-component-size-by-common-factor/discuss/820610/JAVA-Union-and-Find-Technique-Maintain-ParentMap
+// Runtime: 1096 ms, faster than 9.75% of C++ online submissions for Largest Component Size by Common Factor.
+// Memory Usage : 44.7 MB, less than 45.85% of C++ online submissions for Largest Component Size by Common Factor.
+//class Solution {
+//public:
+//
+//	int getRoot(unordered_map<int, int>& parents, int label) {
+//		auto it = parents.find(label);
+//		if (it == end(parents))
+//			parents.emplace_hint(it, label, label);
+//
+//		while (label != parents[label])
+//			label = parents[label];
+//
+//		return label;
+//	}
+//
+//	void doUnion(int num, int factor, unordered_map<int, int>& parents) {
+//		int numParent = getRoot(parents, num);
+//		int factorParent = getRoot(parents, factor);
+//
+//		if (numParent < factorParent) {
+//			parents[factorParent] = numParent;
+//		}
+//		else {
+//			parents[numParent] = factorParent;
+//		}
+//	}
+//
+//	int largestComponentSize(vector<int>& A) {
+//		const int n = A.size();
+//		unordered_map<int, int> parents;
+//
+//		for (int num: A) {
+//			for (int factor = 2; factor*factor <= num; ++factor) {
+//				if (num % factor == 0) {
+//					doUnion(num, factor, parents);
+//					if (num / factor != factor) {
+//						doUnion(num, num / factor, parents);
+//					}
+//				}
+//			}
+//		}
+//
+//		unordered_map<int, int> cc;
+//		int maxComp = 0;
+//		for (auto num : A) {
+//			int pk = getRoot(parents, num);
+//			auto it = cc.find(pk);
+//			cc[pk] = (it == end(cc) ? 0 : it->second) + 1;
+//			maxComp = max(maxComp, cc[pk]);
+//		}
+//		return maxComp;
+//	}
+//};
 
 int main()
 {
