@@ -4,3 +4,4 @@ Debug
 /.vs/LeetCodeCpp/v14/*.suo
 /*.opensdf
 /*.sdf
+*.db
