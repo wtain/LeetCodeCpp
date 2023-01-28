@@ -5,3 +5,7 @@ Debug
 /*.opensdf
 /*.sdf
 *.db
+.idea/
+.vs/
+.vscode/
+/**/*.dSYM
