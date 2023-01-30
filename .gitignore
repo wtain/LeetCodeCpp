@@ -9,3 +9,6 @@ Debug
 .vs/
 .vscode/
 /**/*.dSYM
+*.suo
+ipch/
+*.pch
