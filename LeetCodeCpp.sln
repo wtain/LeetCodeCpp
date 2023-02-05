@@ -967,6 +967,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SlidingWindow", "SlidingWin
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaximumEarningsFromTaxi", "MaximumEarningsFromTaxi\MaximumEarningsFromTaxi.vcxproj", "{B3686171-B430-41B6-9479-A96044996BBE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClosestDessertCost", "ClosestDessertCost\ClosestDessertCost.vcxproj", "{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -4411,6 +4413,14 @@ Global
 		{B3686171-B430-41B6-9479-A96044996BBE}.Release|x64.Build.0 = Release|x64
 		{B3686171-B430-41B6-9479-A96044996BBE}.Release|x86.ActiveCfg = Release|Win32
 		{B3686171-B430-41B6-9479-A96044996BBE}.Release|x86.Build.0 = Release|Win32
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}.Debug|x64.ActiveCfg = Debug|x64
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}.Debug|x64.Build.0 = Debug|x64
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}.Debug|x86.ActiveCfg = Debug|Win32
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}.Debug|x86.Build.0 = Debug|Win32
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}.Release|x64.ActiveCfg = Release|x64
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}.Release|x64.Build.0 = Release|x64
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}.Release|x86.ActiveCfg = Release|Win32
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -4880,6 +4890,7 @@ Global
 		{DC11B54B-69D6-46B5-8A17-078B74238B6A} = {D70943A9-B464-4D5F-B3A8-BAA08D5AEDBF}
 		{C13F0F5F-BBEF-405C-A5D0-E437399B01F0} = {12F1CEA4-16A7-40B9-BEC6-A42F671BE1CA}
 		{B3686171-B430-41B6-9479-A96044996BBE} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
+		{0D2AFA20-DDF1-41C1-9487-B69E655F31FF} = {28CCDD27-A55C-49D2-8E3A-F87DD45D0456}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1D7AFAA4-8EC0-4CA8-83FA-021DDBBD20D3}
